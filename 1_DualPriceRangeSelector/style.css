@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.main_content{
+    height: 100vh;
+    width: 100vw;
+    background-color: #d6e2f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 28%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.First_Line{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.First_Line h1{
+    color: #414d55;
+    font-size: 2.2rem;
+}
+
+.First_Line p{
+    font-size: 1.3rem;
+    color: #28b5e1;
+    font-weight: 600;
+}
+
+.Last_Line{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.Dollar{
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.Dollar span{
+    background-color: #f4f8fa;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #414d55;
+    border: 1px solid #d1e1e9;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.Dollar p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #414d55;
+}
+
+.Last_Line button{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    background-color: #28b5e1;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Last_Line button:hover{
+    transform: scale(1.1); 
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #28b5e1;
+    background-color: white;
+    border: 1px solid #28b5e1;
+    border-radius: 8px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.ShowValue{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
+    color: #414d55;
+    font-weight: 500;
+    background-color: #f5f5f5;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    border: 1px solid #d1e1e9;
+}
+
+.slider-container{
+    height: 15px;
+    width: 100%;
+    position: relative;
+    background: #e4e4e4;
+    border-radius: 5px;
+}
+
+.slider-container .price-slider {
+    height: 100%;
+    left: 25%;
+    right: 15%;
+    position: absolute;
+    border-radius: 5px;
+    background: #01940b;
+}
+
+.range-input input[type="range"] {
+    pointer-events: auto;
+    appearance: none;
+    width: 100%;   
+    height: 15px;
+    background: none;
+    border: 1px solid #d1e2ea;
+    border-radius: 18px;
+    appearance: none;
+}
+
+/* Styles for the range thumb in WebKit browsers */
+input[type="range"]::-webkit-slider-thumb {
+    width: 30px;
+    height: 30px;       
+    background: #7ed321;
+    border-radius: 70%;
+    pointer-events: auto;
+    cursor: pointer;
+    appearance: none;
+}
+
+.min-range{
+    position: absolute;
+}
+.max-range{
+    position: absolute;
+}
+
